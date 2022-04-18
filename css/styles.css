@@ -42,6 +42,7 @@ body {
 .header-list {
   display: flex;
   margin: 0;
+  padding-left: 0;
 }
 .header-link-w {
   font-family: 'Raleway', sans-serif;
@@ -86,6 +87,7 @@ body {
 .header-cnt {
   display: flex;
   margin: 0 0 0 auto;
+  padding: 0;
 }
 .header-cnt-1:not(:last-child) {
   margin-right: 50px;
@@ -146,7 +148,6 @@ body {
 }
 .main-specific li {
   width: 270px;
-  height: 101px;
 }
 .main-heading {
   font-weight: 700;
@@ -180,19 +181,25 @@ body {
   color: var(--main-text-color, #757575);
   margin: 0;
 }
+.main-team {
+  background: #f5f4fa;
+}
 .main-our-team {
   display: flex;
   flex-wrap: wrap;
   padding-inline-start: 0;
-  margin: -15px 0 0 0;
+  margin: -15px;
+  padding: 0;
 }
 .main-our-team-box {
   margin: 15px;
   border-radius: 4px;
   width: 270px;
-  height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.main-our-team-box-aside {
+  padding: 30px 0;
 }
 .main-our-team-name {
   font-weight: 500;
@@ -201,8 +208,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-title-color, #212121);
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 .main-our-team-prof {
   font-size: 16px;
@@ -211,7 +217,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color, #757575);
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 /* -------------------------------MAIN--PORTFOLIO--------------------------------- */
 
@@ -253,7 +259,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  padding-inline-start: 15px;
+  padding-inline-start: 0;
 }
 .portfolio-list li {
   margin: 15px;
@@ -296,7 +302,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--accent-color, #2196f3);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-studio {
   color: #ffffff;
@@ -307,17 +313,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  width: 231px;
-  height: 81px;
-  display: block;
-  justify-content: space-between;
 }
 .footer-address .list {
   padding-inline-start: 0;
 }
-.footer-link {
+.footer-link a {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-address-mail {
-  margin: 9px 0px;
+.footer-link li:not(:last-child) {
+  margin-bottom: 9px;
 }
